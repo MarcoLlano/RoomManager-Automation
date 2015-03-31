@@ -43,7 +43,7 @@ public class ResourceDeletedUpdatesAdvancedSearchPageInTablet {
 
 	@BeforeMethod(groups = "FUNCTIONAL")
 	public void beforeMethod() throws MalformedURLException, IOException {
-
+		
 		//Create resource by Rest
 		String resourceFilePath = System.getProperty("user.dir") + RESOURCE1_PATH;
 		RootRestMethods.createResource(resourceFilePath, "");
