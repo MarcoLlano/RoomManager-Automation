@@ -192,15 +192,27 @@ public class RoomsPage extends AbstractMainMenu {
 	}
 
 	/**
-	 * [CG]Method that allows to get the state of the room if it is enable or disable
+	 * [CG]Method that allows to verify if a room is disabled
 	 * @param roomName
 	 * @return true or false if the button is enabled or disabled
 	 */
-	public boolean stateEnableDisableBtn(String roomName) {
-		String locator = "//span[contains(text(),'" + roomName +
-				"')]//ancestor::div[@ng-click='row.toggleSelected($event)']//span";
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
-		return driver.findElement(By.xpath(locator)).isEnabled();
+	public boolean isRoomDisabled(String roomName) {
+		By enableDisableBtnLocator = By.xpath("//span[contains(text(),'" + roomName 
+				+ "')]//ancestor::div[@ng-click='row.toggleSelected($event)']//div[@ng-if='"
+				+ "(row.entity.enabled == false)']");
+		return UIMethods.isElementPresent(enableDisableBtnLocator );
+	}
+	
+	/**
+	 * [CG]Method that allows to verify if a room is enabled
+	 * @param roomName
+	 * @return
+	 */
+	public boolean isRoomEnabled(String roomName) {
+		By enableDisableBtnLocator = By.xpath("//span[contains(text(),'" + roomName 
+				+ "')]//ancestor::div[@ng-click='row.toggleSelected($event)']//div[@ng-if='"
+				+ "(row.entity.enabled == true)']");
+		return UIMethods.isElementPresent(enableDisableBtnLocator );
 	}
 
 	/**

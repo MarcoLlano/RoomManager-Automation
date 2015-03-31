@@ -571,7 +571,7 @@ public class SchedulePage {
 	 * @param attendees
 	 * @return SchedulePage
 	 */
-	private SchedulePage setMeetingInformation(String organizer, String subject, String startTime, 
+	public SchedulePage setMeetingInformation(String organizer, String subject, String startTime, 
 			String endTime, String attendees) {
 		setOrganizerTxtBox(organizer);
 		setSubjectTxtBox(subject);

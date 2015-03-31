@@ -37,7 +37,7 @@ public class OutOfOrderIsCreatedAndEnabled {
 	@Test(groups = {"ACCEPTANCE", "UI"})
 	public void testOutOfOrderIsCreatedAndEnabled() throws JSONException, MalformedURLException, IOException {
 		String startDate = testData.get(4).get("Start date (days to add)");
-		String endDate = testData.get(4).get("End time (minutes to add)");
+		String endDate = testData.get(4).get("End date (days to add)");
 		String startTime = testData.get(4).get("Start time (minutes to add)");
 		String endTime = testData.get(4).get("End time (minutes to add)");
 		String description = testData.get(4).get("Description");

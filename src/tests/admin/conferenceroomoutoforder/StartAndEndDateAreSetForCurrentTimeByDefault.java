@@ -33,7 +33,7 @@ public class StartAndEndDateAreSetForCurrentTimeByDefault {
 		//Getting Out Of Order data from an excel file
 		ExcelReader excelReader = new ExcelReader(EXCEL_INPUT_DATA);
 		List<Map<String, String>> testData = excelReader.getMapValues("OutOfOrderPlanning");
-		String roomName = testData.get(0).get("Room Name");
+		String roomName = testData.get(5).get("Room Name");
 		String currentDate = TimeManager.getCurrentDate("MMM dd YYYY");
 		
 		//Opening Out Of Order Planning

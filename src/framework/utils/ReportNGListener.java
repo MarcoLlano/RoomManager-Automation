@@ -37,14 +37,26 @@ public class ReportNGListener implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		try {
 		System.setProperty("org.uncommons.reportng.escape-output", "false");
+		
+		//Folder where the screenshots for the report would be saved
 		String filePath = System.getProperty("user.dir") + "/test-output/html/screenshots/";
 		String failureImageFileName;
+		
+		//If the test case has a data provider
 		if(result.getMethod().toString().contains("java.lang")) {
+			
+			//The name of the file would be the name of the test case plus the name of the first parameter
 			failureImageFileName =  result.getName() + "_" + result.getParameters()[0] + ".png"; 
 		} else {
+			
+			//The name of the file would be the name of the test case 
 			failureImageFileName =  result.getName() + ".png"; 
 		}
+		
+		//Taking the screenshot
 		UIMethods.takeScreenShot(filePath, failureImageFileName);
+		
+		//Adding the screenshot to the report
 		Reporter.log("<a href=\"" + filePath + failureImageFileName 
 				+ "\"><img src=\"file:///" + filePath + failureImageFileName 
 				+ "\" alt=\"\"" + "height='100' width='100'/> " + "<br />"); 

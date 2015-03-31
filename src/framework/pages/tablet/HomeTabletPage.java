@@ -168,9 +168,9 @@ public class HomeTabletPage {
 	 * @return
 	 */
 	public SettingsPage clickSettingsBtn() {
-		
+
 		//If current page is not Settings
-		if (!UIMethods.isElementPresent(By.xpath("//button[@ng-click='saveSelectedRoom()']"))) {
+		if (!UIMethods.isElementDisplayed(By.xpath("//button[@ng-click='saveSelectedRoom()']"))) {
 			settingsBtn.click();
 		}
 		return new SettingsPage();

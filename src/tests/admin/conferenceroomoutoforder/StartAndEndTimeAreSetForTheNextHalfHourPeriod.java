@@ -32,7 +32,7 @@ public class StartAndEndTimeAreSetForTheNextHalfHourPeriod {
 		//Getting Out Of Order data from an excel file
 		ExcelReader excelReader = new ExcelReader(EXCEL_INPUT_DATA);
 		List<Map<String, String>> testData = excelReader.getMapValues("OutOfOrderPlanning");
-		String roomName = testData.get(0).get("Room Name");
+		String roomName = testData.get(5).get("Room Name");
 		
 		//Opening Out Of Order Planning
 		HomeAdminPage homeAdminPage = new HomeAdminPage(); 

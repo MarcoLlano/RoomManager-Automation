@@ -83,12 +83,12 @@ public class OutOfOrderCreatedReplacesExistingMeetingInTablet {
 		homeTabletPage = new HomeTabletPage();
 		schedulePage = homeTabletPage.clickScheduleBtn();
 		Assert.assertTrue(schedulePage.isOutOfOrderBoxDisplayed(title));
-		Assert.assertTrue(schedulePage.isMeetingBoxDisplayed(subject));
+		Assert.assertFalse(schedulePage.isMeetingBoxDisplayed(subject));
 
 		//Assertion for TC15
 		SearchPage searchPage = schedulePage.clickSearchBtn();
 		Assert.assertTrue(searchPage.isOutOfOrderBoxDisplayed(title));
-		Assert.assertTrue(searchPage.isMeetingBoxDisplayed(subject));
+		Assert.assertFalse(searchPage.isMeetingBoxDisplayed(subject));
 	}
 
 	@AfterMethod(groups = "ACCEPTANCE")

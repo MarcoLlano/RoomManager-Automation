@@ -1,7 +1,10 @@
 package framework.common;
 
+import static framework.common.AppConfigConstants.IMPLICIT_WAIT;
+
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -51,11 +54,31 @@ public class UIMethods {
 			try {
 				webElement.click();
 				value = true;
-			}
-			catch (Exception e) {
+			} catch (Exception e) {
 				value = false;
 			}
 		} 
+	}
+
+	/**
+	 * [YA]This method verifies if an element is displayed
+	 * @param locator
+	 * @return boolean
+	 */
+	public static boolean isElementDisplayed(By locator) {
+		try
+		{
+			SeleniumDriverManager.getManager().getDriver().manage().timeouts()
+			.implicitlyWait(IMPLICIT_WAIT/5, TimeUnit.SECONDS);
+			SeleniumDriverManager.getManager().getDriver().findElement(locator);
+			return true;
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+			return false;
+		} finally {
+			SeleniumDriverManager.getManager().getDriver().manage().timeouts()
+			.implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
+		}
 	}
 
 	/** 
@@ -66,7 +89,8 @@ public class UIMethods {
 	 */ 
 	public static void takeScreenShot(String filePath, String fileName) throws IOException { 
 		try { 
-			File scrFile = ((TakesScreenshot)SeleniumDriverManager.getManager().getDriver()).getScreenshotAs(OutputType.FILE); 
+			File scrFile = ((TakesScreenshot)SeleniumDriverManager.getManager().getDriver())
+					.getScreenshotAs(OutputType.FILE); 
 			FileUtils.copyFile(scrFile, new File(filePath + fileName)); 
 		} catch (Exception e) { 
 			e.printStackTrace(); 
