@@ -10,31 +10,31 @@
     <classes>   		
     	<class name="test.java.admin.resources.StartTestSuiteResources"/>
 		<!-- TC01 --> 
-    	<class name="test.java.admin.resources.ResourceCanBeDeleted"/>		
-    	<!-- TC02, TC04, TC05, TC27 -->
-    	<class name="test.java.admin.resources.ResourceCanBeUpdatedInResourceInfo"/>   		     	
-    	<!-- TC06 -->
-    	<class name="test.java.admin.resources.ResourcInformationIsDisplayedInResourceInfoPage"/> 
-    	<!-- TC07 -->
-    	<class name="test.java.admin.resources.ResourceDeletedUpdatesAdvancedSearchPageInTablet"/> 	
-    	<!-- TC16, TC29 -->   	
-    	<class name="test.java.admin.resources.ResourceIconCanBeUpdatedInResourcesPage"/><!-- TC03, TC15 -->
+    		<class name="test.java.admin.resources.ResourceCanBeDeleted"/>		
+    		<!-- TC02, TC04, TC05, TC27 -->
+    		<class name="test.java.admin.resources.ResourceCanBeUpdatedInResourceInfo"/>   		     	
+	    	<!-- TC06 -->
+	    	<class name="test.java.admin.resources.ResourcInformationIsDisplayedInResourceInfoPage"/> 
+	    	<!-- TC07 -->
+    		<class name="test.java.admin.resources.ResourceDeletedUpdatesAdvancedSearchPageInTablet"/> 	
+	    	<!-- TC16, TC29 -->   	
+    		<class name="test.java.admin.resources.ResourceIconCanBeUpdatedInResourcesPage"/>
 		<!-- TC03, TC15 -->    	
 		<class name="tests.admin.resources.ResourceCreatedWithRequiredAndNotRequiredValue" />
-    	<!-- TC17 --> 
-    	<class name="test.java.admin.resources.ResourceCanNotBeUpdatedInResourceInfo"/> 	
-        <!--TC18-->
-        <class name="test.java.admin.resources.TotalItemsInformationLabelDisplaysResourcesQuantity" />
+	    	<!-- TC17 --> 
+    		<class name="test.java.admin.resources.ResourceCanNotBeUpdatedInResourceInfo"/> 	
+	        <!--TC18-->
+        	<class name="test.java.admin.resources.TotalItemsInformationLabelDisplaysResourcesQuantity" />
 		<!--TC21-->
 		<class name="test.java.admin.resources.SelectedItemsLblInformationDisplaysTheNumberOfCheckedResources" />	
-    	<!-- TC31 --> 
-    	<class name="test.java.admin.resources.ResourceCreatedUpdatesAdvancedSearchPageInTablet"/>
-    	<!-- TC32 -->
-    	<class name="test.java.admin.resources.ResourceQuantityIsDisplayedInResourceAssociationPage"/>
-    	<!-- TC33 -->
-    	<class name="test.java.admin.resources.AssociatedRoomIsDisplayedInResourceAssociationPage"/>   		
-    	<!-- TC34, TC30 -->
-    	<class name="test.java.admin.resources.ResourceNameAndDisplayNameCanBeUpdatedInResourcesPage"/>				
+	    	<!-- TC31 --> 
+    		<class name="test.java.admin.resources.ResourceCreatedUpdatesAdvancedSearchPageInTablet"/>
+	    	<!-- TC32 -->
+	    	<class name="test.java.admin.resources.ResourceQuantityIsDisplayedInResourceAssociationPage"/>
+    		<!-- TC33 -->
+	    	<class name="test.java.admin.resources.AssociatedRoomIsDisplayedInResourceAssociationPage"/>   		
+    		<!-- TC34, TC30 -->
+    		<class name="test.java.admin.resources.ResourceNameAndDisplayNameCanBeUpdatedInResourcesPage"/>				
 		<!--TC35-->
 		<class name="test.java.admin.resources.AnErrorMessageIsDisplayedWhenAResourceWithANameRegisteredIsAdded" />
 		<!--TC37-->	
