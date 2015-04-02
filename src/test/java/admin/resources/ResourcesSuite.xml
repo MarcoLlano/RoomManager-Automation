@@ -19,14 +19,14 @@
     		<class name="test.java.admin.resources.ResourceDeletedUpdatesAdvancedSearchPageInTablet"/> 	
 	    	<!-- TC16, TC29 -->   	
     		<class name="test.java.admin.resources.ResourceIconCanBeUpdatedInResourcesPage"/>
-		<!-- TC03, TC15 -->    	
-		<class name="tests.admin.resources.ResourceCreatedWithRequiredAndNotRequiredValue" />
+			<!-- TC03, TC15 -->    	
+			<class name="test.java.admin.resources.ResourceCreatedWithRequiredAndNotRequiredValue" />
 	    	<!-- TC17 --> 
     		<class name="test.java.admin.resources.ResourceCanNotBeUpdatedInResourceInfo"/> 	
 	        <!--TC18-->
         	<class name="test.java.admin.resources.TotalItemsInformationLabelDisplaysResourcesQuantity" />
-		<!--TC21-->
-		<class name="test.java.admin.resources.SelectedItemsLblInformationDisplaysTheNumberOfCheckedResources" />	
+			<!--TC21-->
+			<class name="test.java.admin.resources.SelectedItemsLblInformationDisplaysTheNumberOfCheckedResources" />	
 	    	<!-- TC31 --> 
     		<class name="test.java.admin.resources.ResourceCreatedUpdatesAdvancedSearchPageInTablet"/>
 	    	<!-- TC32 -->
@@ -35,14 +35,14 @@
 	    	<class name="test.java.admin.resources.AssociatedRoomIsDisplayedInResourceAssociationPage"/>   		
     		<!-- TC34, TC30 -->
     		<class name="test.java.admin.resources.ResourceNameAndDisplayNameCanBeUpdatedInResourcesPage"/>				
-		<!--TC35-->
-		<class name="test.java.admin.resources.AnErrorMessageIsDisplayedWhenAResourceWithANameRegisteredIsAdded" />
-		<!--TC37-->	
-		<class name="test.java.admin.resources.AnErrorMessageIsDisplayedWhenAResourceIsUpdatedWithANameAlreadyRegistered" />
-		<!--TC40, TC41-->
-		<class name="test.java.admin.resources.AnErrorMessageIsDisplayedWhenTextBoxesAreLeftEmptyInAddForm" />
-		<!--TC42, TC43-->
-		<class name="test.java.admin.resources.AnErrorMessageIsDisplayedWhenTextBoxesAreLeftEmptyInResourceInfoForm" />
+			<!--TC35-->
+			<class name="test.java.admin.resources.AnErrorMessageIsDisplayedWhenAResourceWithANameRegisteredIsAdded" />
+			<!--TC37-->	
+			<class name="test.java.admin.resources.AnErrorMessageIsDisplayedWhenAResourceIsUpdatedWithANameAlreadyRegistered" />
+			<!--TC40, TC41-->
+			<class name="test.java.admin.resources.AnErrorMessageIsDisplayedWhenTextBoxesAreLeftEmptyInAddForm" />
+			<!--TC42, TC43-->
+			<class name="test.java.admin.resources.AnErrorMessageIsDisplayedWhenTextBoxesAreLeftEmptyInResourceInfoForm" />
     </classes>
   </test> 
 </suite> <!-- Suite -->
